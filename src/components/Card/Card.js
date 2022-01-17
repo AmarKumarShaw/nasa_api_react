@@ -4,10 +4,10 @@ import "./Card.css"
 
 
 
-const Card = ({data}) => {
+const Card = ({data,key}) => {
     const [like,setLike] = useState("like")
     return (
-        <div className="card">
+        <div className="card" key={key} >
                 <img className="card-img" src={data.url} alt="" />
             <div className="card-body">
                 <h3 className="card-title">{data.title}</h3>

@@ -26,7 +26,7 @@ const Cards = () => {
         <div className="cards">
 
             { loading ?
-                datas.map((data) => <Card data={data} />) : <Loading />
+                datas.map((data,idx) => <Card key={idx} data={data} />) : <Loading />
             }
 
         </div>
